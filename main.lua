@@ -63,11 +63,11 @@ function PartESP.AddESP(ObjectName,Object,TextSize,TextColor)
 				if PartTable.ESP.Visible then
 					PartTable.ESP.Center = true
 					PartTable.ESP.Size = TextSize
-					PartTable.ESP.Outline = true
-					PartTable.ESP.OutlineColor = Color3.fromRGB(0, 0, 0)
-					PartTable.ESP.Color = TextColor or Color3.fromRGB(255,255,255)
+					--PartTable.ESP.Outline = true
+					--PartTable.ESP.OutlineColor = Color3.fromRGB(0, 0, 0)
+					PartTable.ESP.Color = TextColor
 					PartTable.ESP.Transparency = 0
-					PartTable.ESP.Font = Drawing.Fonts.UI
+					PartTable.ESP.Font = Drawing.Fonts.Arial
 
 					PartTable.ESP.Position = Vector2new(Vector.X, Vector.Y - 25)
 
@@ -79,7 +79,7 @@ function PartESP.AddESP(ObjectName,Object,TextSize,TextColor)
 
 						Content = Parts.Name..Content
 
-						Content = Content.." "..Parts.Distance
+						Content = Content
 				
 
 					PartTable.ESP.Text = Content
