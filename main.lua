@@ -62,7 +62,7 @@ function PartESP.AddESP(ObjectName,Object,TextSize,TextColor)
 
 				if PartTable.ESP.Visible then
 					PartTable.ESP.Center = true
-					PartTable.ESP.Size = TextSize or 14
+					PartTable.ESP.Size = TextSize
 					PartTable.ESP.Outline = true
 					PartTable.ESP.OutlineColor = Color3.fromRGB(0, 0, 0)
 					PartTable.ESP.Color = TextColor or Color3.fromRGB(255,255,255)
