@@ -67,21 +67,11 @@ function PartESP.AddESP(ObjectName,Object,TextSize,TextColor)
 					PartTable.ESP.OutlineColor = Color3.fromRGB(0, 0, 0)
 					PartTable.ESP.Color = TextColor
 					PartTable.ESP.Transparency = 0
-						
 					PartTable.ESP.Font = Drawing.Fonts.UI
-
 					PartTable.ESP.Position = Vector2new(Vector.X, Vector.Y - 25)
-
-					local Parts, Content = {
-						Distance = "["..tostring(mathfloor(((Object.Position or Vector3zero) - (LocalPlayer.Character.HumanoidRootPart.Position or Vector3zero)).Magnitude)).."]",
-						Name = ObjectName
-					}, ""
-
-
-						Content = Parts.Name..Content
 				
 
-					PartTable.ESP.Text = Content
+					PartTable.ESP.Text = ObjectName
 				end
 			else
 				PartTable.ESP.Visible = false
