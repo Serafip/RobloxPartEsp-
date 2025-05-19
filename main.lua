@@ -45,7 +45,7 @@ end
 --// Main
 
 
-function PartESP.AddESP(ObjectName,Object,TextSize,TextColor, Transparency)
+function PartESP.AddESP(ObjectName,Object,TextSize,TextColor)
 	local PartTable = {
 		Name = Object.Name,
 		OldPath = Object:GetFullName(),
@@ -66,7 +66,7 @@ function PartESP.AddESP(ObjectName,Object,TextSize,TextColor, Transparency)
 					PartTable.ESP.Outline = true
 					PartTable.ESP.OutlineColor = Color3.fromRGB(0, 0, 0)
 					PartTable.ESP.Color = TextColor or Color3.fromRGB(255,255,255)
-					PartTable.ESP.Transparency = Transparency
+					PartTable.ESP.Transparency = 0
 					PartTable.ESP.Font = Drawing.Fonts.UI
 
 					PartTable.ESP.Position = Vector2new(Vector.X, Vector.Y - 25)
