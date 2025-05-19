@@ -67,7 +67,7 @@ function PartESP.AddESP(ObjectName,Object,TextSize,TextColor)
 					--PartTable.ESP.OutlineColor = Color3.fromRGB(0, 0, 0)
 					PartTable.ESP.Color = TextColor
 					PartTable.ESP.Transparency = 0
-					PartTable.ESP.Font = Drawing.Fonts.Arial
+					PartTable.ESP.Font = Drawing.Fonts.UI
 
 					PartTable.ESP.Position = Vector2new(Vector.X, Vector.Y - 25)
 
